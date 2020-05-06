@@ -1,8 +1,8 @@
-# Omnicalc `params`
+# Omnicalc 1
 
 Dynamic web applications are more interesting than static websites for one reason: **user input.** Let's finally learn how to let our users give us input!
 
-### [Here is the target we will ultimately build.](https://omnicalc-params.matchthetarget.com/)
+### [Here is the target we will ultimately build.](https://omnicalc-1.matchthetarget.com/)
 
 ## Setup
 
@@ -17,20 +17,22 @@ Dynamic web applications are more interesting than static websites for one reaso
 
 The way it should work is:
 
- - If I visit the ROUTE `/square/new`, I should see a form with a label and an input to enter a number. (Since we're no longer typing into the address bar, we can use decimals and are no longer limited to integers. Yay!)
+ - If I visit the ROUTE `/square/new`, I should see a form with a label and an input to enter a number.
     - If I submit that form, I should see the square of the number that I entered.
  - If I visit the ROUTE `/square_root/new`, I should see a form with a label and an input to enter a number.
     - If I submit that form, I should see the square root of the number that I entered.
  - If I visit the ROUTE `/payment/new`, I should see a form with labels and inputs to enter three values:
-    - The APR (annual percentage rate). (Since our users are no longer limited to integers, we can avoid thinking in basis points. Phew!)
+    - The APR (annual percentage rate).
     - The number of _years_ remaining.
     - The present value.
     - If I submit that form, I should see the **monthly** payment due given the values that I entered.
-    - Since the units of the inputs are different, this **will not use the exact same code as the payment task from Part I**.
+    - Mind your units! Use the formula located in the file `payment_formula.gif` in the same folder as this README.
+
+        ![Payment formula](payment_formula.gif)
  - If I visit the ROUTE `/random/new`, I should see a form with labels and inputs to enter two numbers, a minimum and a maximum.
     - If I submit that form, I should see a random number that falls between the numbers that I entered.
 
-Play around and try various inputs in [the target](http://omnicalc-params.matchthetarget.com/) to see examples of how each form should behave.
+Play around and try various inputs in [the target](http://omnicalc-1.matchthetarget.com/) to see examples of how each form should behave.
 
 ### Valid, accessible forms
 
